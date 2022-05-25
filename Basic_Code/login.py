@@ -23,3 +23,14 @@ driver.find_element(By.ID, 'input-email').send_keys("user6@bd.com")
 driver.find_element(By.ID, 'input-password').clear()
 driver.find_element(By.ID, 'input-password').send_keys("123456")
 driver.find_element(By.XPATH, '//*[@id="content"]/div/div[2]/div/form/input').click()
+
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+p1 = Person("John", 36)
+
+print(p1.name)
+print(p1.age)
