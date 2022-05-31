@@ -13,7 +13,7 @@ def exception_handling():
 exception_handling()
 '''
 
-def exception_handling_tryExcept():
+ def exception_handling_tryExcept():
     try:
         a = 10
         b = 20
