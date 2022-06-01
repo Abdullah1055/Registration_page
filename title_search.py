@@ -28,8 +28,16 @@ class Search_Engine:
         self.driver.get("https://www.linkedin.com/")
         print("The page title of the google is " + self.driver.title)
         self.driver.close()
+
+    def Title_of_the_symphony(self):
+        self.driver = webdriver.Chrome(executable_path="/home/abdullah/PycharmProjects/pythonProject_2/Drivers/chromedriver_linux64 (1)/chromedriver")
+        self.driver.get("https://www.symphony-mobile.com/")
+        print("The Title of the page is " + self.driver.title)
+        self.driver.close()
+
 test_object = Search_Engine()
 test_object.Title_of_the_page()
 test_object.Title_of_the_linkedin()
+test_object.Title_of_the_symphony()
 
 
