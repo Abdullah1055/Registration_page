@@ -15,24 +15,31 @@ if __name__ == "__main__":
 
 import selenium
 import pytest
+import time
 from selenium import webdriver
 class Search_Engine:
     def Title_of_the_page(self):
         self.driver = webdriver.Chrome(executable_path="/home/abdullah/PycharmProjects/pythonProject_2/Drivers/chromedriver_linux64 (1)/chromedriver")
         self.driver.get("https://google.com")
         print("The page title of the google is " + self.driver.title)
+        self.driver.maximize_window()
+        time.sleep(5)
         self.driver.close()
 
     def Title_of_the_linkedin(self):
         self.driver = webdriver.Chrome(executable_path="/home/abdullah/PycharmProjects/pythonProject_2/Drivers/chromedriver_linux64 (1)/chromedriver")
         self.driver.get("https://www.linkedin.com/")
         print("The page title of the google is " + self.driver.title)
+        self.driver.maximize_window()
+        time.sleep(5)
         self.driver.close()
 
     def Title_of_the_symphony(self):
         self.driver = webdriver.Chrome(executable_path="/home/abdullah/PycharmProjects/pythonProject_2/Drivers/chromedriver_linux64 (1)/chromedriver")
         self.driver.get("https://www.symphony-mobile.com/")
         print("The Title of the page is " + self.driver.title)
+        self.driver.maximize_window()
+        time.sleep(5)
         self.driver.close()
 
 test_object = Search_Engine()
